@@ -8,10 +8,11 @@ const routes = [
   { path: "/", component: Home, name: "home" },
   { path: "/login", component: Login, name: "login" },
   { path: "/signup", component: Signup, name: "signup" },
-  { path: "/profile", component: Profile, name: "profile", props: true},
+  { path: "/profile", component: Profile, name: "profile", props: true },
 ];
 
 const router = new VueRouter({
+  mode: "history",
   routes,
 });
 
