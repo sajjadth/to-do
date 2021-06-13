@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const userRouter = require("./routers/userRouter");
 const listRouter = require("./routers/listRouter");
+const connect = require("connect-history-api-fallback");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -14,6 +15,7 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static(path.join(__dirname, "..", "client", "public")));
+app.use(connect());
 app.use("/api/users", userRouter);
 app.use("/api/lists", listRouter);
 
