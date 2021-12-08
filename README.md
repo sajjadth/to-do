@@ -2,18 +2,24 @@
 
 simple to-do-app with User Authentication and MongoDb Atlas
 
-<h2>start server</h2>
+### start server
+```
 cd server <br/>
 npm start
-
-<h2>server development mode</h2>
+```
+### server development mode
+```
 cd server <br/>
 npm run dev
-
-<h2>start clinet</h2>
+```
+### start clinet
+```
 cd client <br/>
 npm start
-
-<h2>output clinet</h2>
+```
+### output clinet
+```
 cd client <br/>
 npm run build
+```
+> My Sixth Project After Learning About Vue, Node.js
